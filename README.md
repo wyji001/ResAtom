@@ -13,7 +13,7 @@ ResAtom is a protein ligand affinity evaluation system
 *openbabel(2.4.1)
 
 ## Usage
-In order to use ResAtom, you need to download the model from [here](https://drive.google.com/file/d/1CXERvvrBRK8VLMn1IFmKo-HT4a6jc26_/view?usp=sharing).
+In order to use ResAtom, you need to download the model from [here](https://drive.google.com/file/d/1CfdeU8hhKa9KKcUnH4dNJ8aNlZgdrgu2/view?usp=sharing).
    ```sh
    tar zxvf ResAtom.tar.gz
    cd ResAtom
