@@ -27,8 +27,7 @@ Only use the affinity evaluation function
    ```sh
    python get_data.py --model_path ./dic --numpy_file ./example/Affinityprediction/1a30_np/1a30.npy --number 5 > out.out
    ```
-Use affinity prediction function without natural conformation(Here we only provide the prediction results of the combination of screening models.
-If you want to use other scoring functions, please manually predict the score value of the docking conformation.)
+Use affinity prediction function without natural conformation(In the test, we choose the conformation provided by CASF-2016, this project uses Autodock Vina to generate the conformation.Here we only provide the prediction results of the combination of screening models.If you want to use other scoring functions, please manually predict the score value of the docking conformation.)
 
 1. run run_system.py file(The protein and ligand need to trans to pdbqt format) and prepare the dock config：
    ```sh
