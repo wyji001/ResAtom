@@ -18,16 +18,17 @@ In order to use ResAtom, you need to download the model from [here](https://driv
    tar zxvf ResAtom.tar.gz
    cd ResAtom
    ```
-Only use the affinity evaluation function
+### Use the affinity evaluation function of ResAtom-Score
 1. Pretreatment of protein and ligand (The hydrogen atoms of proteins and ligands need to be added using openbabel(2.4.1) before pretreatment)：
    ```sh
    python prepare_vox.py --ligand ./example/Affinityprediction/1a30/1a30_ligand.pdb --protein ./example/Affinityprediction/1a30/1a30_protein.pdb --tem_floder ./example/Affinityprediction/1a30_tem --output ./example/Affinityprediction/1a30_np/1a30.npy > out.out
    ```
-2. Get the predicted value of affinity：
+2. Get the predicted affinity of protein-ligand：
    ```sh
    python get_data.py --model_path ./dic --numpy_file ./example/Affinityprediction/1a30_np/1a30.npy --number 5 > out.out
    ```
-Use affinity prediction function without natural conformation(In the test, we choose the conformation provided by CASF-2016, this project uses Autodock Vina to generate the conformation.Here we only provide the prediction results of the combination of screening models.If you want to use other scoring functions, please manually predict the score value of the docking conformation.)
+ ### Use the affinity prediction function of ResAtom-Dock and ResAtom-Score in the absence of experimental conformations of ligand and protein. 
+     In the test, we choose the conformation provided by CASF-2016, this project uses Autodock Vina to generate the conformation.Here we only provide the prediction results of the combination of screening models.If you want to use other scoring functions, please manually predict the score value of the docking conformation.
 
 1. run run_system.py file(The protein and ligand need to trans to pdbqt format) and prepare the dock config：
    ```sh
