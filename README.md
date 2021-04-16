@@ -19,7 +19,7 @@ In order to use ResAtom, you need to download the model from [here](https://driv
    cd ResAtom
    ```
 Only use the affinity evaluation function
-1. Pretreatment of protein and ligand(The protein and ligand need to add hydrogen with openbabel(2.4.1) before pretreatment)：
+1. Pretreatment of protein and ligand (The hydrogen atoms of proteins and ligands need to be added using openbabel(2.4.1) before pretreatment)：
    ```sh
    python prepare_vox.py --ligand ./example/Affinityprediction/1a30/1a30_ligand.pdb --protein ./example/Affinityprediction/1a30/1a30_protein.pdb --tem_floder ./example/Affinityprediction/1a30_tem --output ./example/Affinityprediction/1a30_np/1a30.npy > out.out
    ```
